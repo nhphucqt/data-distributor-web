@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html style="padding-bottom:15px; background-color:lightyellow;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Data Distributor</title>
+        <link rel="icon" href="https://cdn.glitch.com/e71fef7c-f96b-47d7-856f-52e04c30fee6%2Ffavicon-16x16.png?v=1622485527019">
+        <script src="ListRange.js"></script>
+        <script src="data_example.js"></script>
+        <script src="getstatistic.js"></script>
+        <script src="func.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="padding:5px" onbeforeunload="return ''">
+        <div class="row" style="height:100%">
+            <div class="column">
+                <div class="topdiv">
+                    <textarea id="txarea1" rows="10" wrap="off" spellcheck="false" autofocus class="textareastyle"></textarea>
+                    <script> 
+                        document.getElementById("txarea1").value = data_example;
+                    </script>
+                </div>
+                <div class="bottomdiv">
+                    <button class="buttonstyle1" onclick="GetStatistic()">Result</button>
+                    <button class="buttonstyle1" onclick="Download('txarea1','data.txt')">Download</button>
+                    <button class="buttonstyle1" onclick="Upload('txarea1')">Upload</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="topdiv">
+                    <textarea id="txarea2" rows="10" wrap="off" readonly class="textareastyle"></textarea>
+                </div>
+                <div class="bottomdiv">
+                    <button class="buttonstyle2" onclick="ClearResult()">Clear</button>
+                    <button class="buttonstyle2" onclick="Download('txarea2','result.txt')">Download</button>
+                </div>
+            </div>
+            <div class="column">
+                <div class="topdiv">
+                    <textarea id="txarea3" rows="10" wrap="off" spellcheck="false" readonly class="textareastyle"></textarea>
+                    <script> 
+                        document.getElementById("txarea3").value = Default_ListRange_string; 
+                    </script>
+                </div>
+                <div class="bottomdiv">
+                    <div style="float:left;width:10%;height:100%">
+                        <input type="checkbox" id="cbox" checked onclick="ChangeStateOfText3()">
+                        <label for="cbox"></label>
+                    </div>
+                    <button class="buttonstyle3" onclick="ResetText3()">Reset</button>
+                    <button class="buttonstyle3" onclick="SubmitText3()">Save</button>
+                    <button class="buttonstyle3" onclick="Download('txarea3','listrange.txt')">Download</button>
+                    <button class="buttonstyle3" onclick="Upload('txarea3')">Upload</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

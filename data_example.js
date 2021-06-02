@@ -1,0 +1,3 @@
+var data_example =
+"// =======================================================\n// Author: nhphucqt\n// Visit my github page: https://github.com/nhphucqt\n\n// All lines should be one of 5 types:\n// - Heading line: line starting with '#', the heading of a group of data.\n// - Comment line: line starting with '//'.\n// - Blank line.\n// - Number line:\n//  + Must have only one number.\n//  + Some acceptable types of number: 3, -4.2, 2e5, ...\n// - Ending line: '...', the ending of a group of data.\n// =======================================================\n\n// Data Example:\n\n// comment\n# Heading of group 1\n1\n2\n# Subheading of group 1\n5.23\n// comment\n11\n1.3e3\n...\n// comment\n# Heading of group 2\n-24.4\n34.1143\n23\n39\n...\n// comment"
+;

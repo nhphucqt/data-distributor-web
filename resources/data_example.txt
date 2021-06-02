@@ -1,0 +1,34 @@
+// =======================================================
+// Author: nhphucqt
+// Visit my github page: https://github.com/nhphucqt
+
+// All lines SHOULD be one of 5 types:
+// - Heading line: starting with '#', the heading of a group of data.
+// - Comment line: starting with '//'.
+// - Blank line.
+// - Number line:
+//  + MUST have only one number.
+//  + Some acceptable types of number: 3, -4.2, 2e5, ...
+// - Ending line: '...', the ending of a group of data.
+// =======================================================
+
+// Data Example:
+
+// comment
+# Heading of group 1
+1
+2
+# Subheading of group 1
+5.23
+// comment
+11 
+ 1.3e3
+...
+// comment
+# Heading of group 2
+-24.4
+34.1143
+23
+39
+...
+// comment
